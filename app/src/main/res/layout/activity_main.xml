@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <EditText
+        android:id="@+id/etCep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Digite o CEP: "
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/btnSearch"
+        app:layout_constraintStart_toStartOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/btn_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCep" />
+
+    <TextView
+        android:id="@+id/tvCep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="300dp"
+        android:text="@string/cep"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnSearch"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
+    <TextView
+        android:id="@+id/tvRua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/rua"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvCep"
+        app:layout_constraintStart_toStartOf="@+id/tvCep"
+        app:layout_constraintTop_toBottomOf="@+id/tvCep" />
+
+    <TextView
+        android:id="@+id/tvBairro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/bairro"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvRua"
+        app:layout_constraintStart_toStartOf="@+id/tvRua"
+        app:layout_constraintTop_toBottomOf="@+id/tvRua" />
+
+    <TextView
+        android:id="@+id/tvCidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/cidade_estado"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvBairro"
+        app:layout_constraintStart_toStartOf="@+id/tvBairro"
+        app:layout_constraintTop_toBottomOf="@+id/tvBairro" />
+
+    <TextView
+        android:id="@+id/textCep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/btnSearch"
+        app:layout_constraintStart_toEndOf="@+id/tvCep"
+        app:layout_constraintTop_toTopOf="@+id/tvCep" />
+
+    <TextView
+        android:id="@+id/textRua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textCep"
+        app:layout_constraintStart_toEndOf="@+id/tvRua"
+        app:layout_constraintTop_toBottomOf="@+id/textCep" />
+
+    <TextView
+        android:id="@+id/textBairro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textRua"
+        app:layout_constraintStart_toEndOf="@+id/tvBairro"
+        app:layout_constraintTop_toBottomOf="@+id/textRua" />
+
+    <TextView
+        android:id="@+id/textCidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textBairro"
+        app:layout_constraintStart_toEndOf="@+id/tvCidade"
+        app:layout_constraintTop_toBottomOf="@+id/textBairro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
